@@ -32,3 +32,11 @@ const nav_adver = new Swiper('#nav_adver',{
         prevEl: '#nav_adver .swiper-button-prev'
     }
 })
+const fieldset = document.querySelector('fieldset')
+const search = document.querySelector('#search')
+search.addEventListener('focus',function(){
+    fieldset.style.background = '#FFDB59'
+})
+search.addEventListener('blur',function(){
+    fieldset.style.background = '#222'
+})

@@ -13,7 +13,6 @@ html::-o-scrollbar-thumb:hover {background-color: #FFDB59;}
 ::-webkit-scrollbar-thumb:hover {background-color: #FFDB59;}
 /* header */
 header {
-    background-color:aquamarine;
     max-width: calc(100% - 60px);
     margin: 0 auto;
     height: 100px;
@@ -23,14 +22,12 @@ header {
     align-items: center;
 }
 header h1 {
-    background-color: blue;
     width: 220px;
 }
 header h1 a {}
 header h1 a img {width: 100%;}
 header .h_right > * {margin-left: 20px;}
 header .h_right {
-    background-color: coral;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -55,7 +52,7 @@ header .h_right #search_frm fieldset #search {
     height: 40px;
     letter-spacing: -0.02em;
     background: none;
-    color: #fff;
+    color: #000;
 }
 header .h_right #search_frm fieldset #search::placeholder {color:#fff;}
 header .h_right #search_frm fieldset #searchBtn {
