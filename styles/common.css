@@ -81,12 +81,19 @@ header #open_nav {
     overflow-y: auto;
     /* 웹브라우저 y축 기준으로 내용이 넘칠 경우 스크롤을 표시하고 넘치지 않는다면 스크롤을 숨긴다. */
 }
-header #open_nav #nav_close {
+header #open_nav #nav_close:hover span {
+    filter: drop-shadow(0 0 3px rgba(0,0,0,0.3));
+    background: url(../images/nav_closey.png);
+
+}
+header #open_nav #nav_close span {
     position: absolute;
     width: 35px; height: 35px;
     right: 103px; top: 127px;
+    background: url(../images/nav_close.png) no-repeat center;
+    background-size: cover;
+    transition: all 0.1s;
 }
-header #open_nav #nav_close img {width: 100%;}
 /* swiper-slide nav-adver */
 header #open_nav #nav_adver {
     text-align: center;
