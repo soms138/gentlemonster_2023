@@ -81,7 +81,6 @@ header #open_nav {
 header #open_nav #nav_close:hover span {
     filter: drop-shadow(0 0 3px rgba(0,0,0,0.3));
     background: url(../images/nav_closey.png);
-
 }
 header #open_nav #nav_close span {
     position: absolute;
