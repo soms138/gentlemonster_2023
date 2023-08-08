@@ -22,7 +22,8 @@ header {
     align-items: center;
 }
 header h1 {
-    width: 220px;
+    max-width: 250px;
+    min-width: 200px;
 }
 header h1 a {}
 header h1 a img {width: 100%;}
@@ -78,11 +79,11 @@ header #open_nav {
     overflow-y: auto;
     /* 웹브라우저 y축 기준으로 내용이 넘칠 경우 스크롤을 표시하고 넘치지 않는다면 스크롤을 숨긴다. */
 }
-header #open_nav #nav_close:hover span {
+header #open_nav #nav_close:hover {
     filter: drop-shadow(0 0 3px rgba(0,0,0,0.3));
     background: url(../images/nav_closey.png);
 }
-header #open_nav #nav_close span {
+header #open_nav #nav_close {
     position: absolute;
     width: 35px; height: 35px;
     right: 103px; top: 127px;
@@ -150,4 +151,50 @@ header #open_nav nav a::after{
     content:''; display: block;
     transform: translateX(-50%) scaleX(0);
     transition: all 0.3s;
+}
+/* footer */
+footer {
+    max-width: calc(100% - 60px);
+    margin: 0 auto;
+    padding: 70px 0;
+}
+footer .f_menu {
+    margin-bottom: 70px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+}
+footer .f_menu dl {margin-right: 114px;}
+footer .f_menu dl:last-child {margin-right: 0;}
+footer .f_menu dl dt {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+footer .f_menu dl dd {
+    line-height: 30px;
+}
+footer .f_menu dl dd a {color: #aaa;}
+footer .f_menu dl dd a:hover {
+    color: #FFDB59;
+    border-bottom: 1px solid #FFDB59;
+}
+footer .f_copy {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+footer .f_copy .logo {
+    max-width: 350px;
+    min-width: 350px;
+}
+footer .f_copy .logo img {width: 60%;}
+footer .f_copy address {
+    line-height: 26px;
+    margin-top: -7px;
+}
+footer .f_copy address a {
+    line-height: 26px;
+}
+footer .f_copy address a:hover {
+    color: #FFDB59;
 }
