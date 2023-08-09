@@ -3,7 +3,7 @@ const tab_contents = document.querySelectorAll('.tab_contents > div')
 const radio = document.querySelectorAll('.radio label')
 const login_btn = document.querySelector('.login_btn')
 const user_id = document.querySelector('#id')
-const user_pwd = document.querySelector('#pwd')
+const user_pw = document.querySelector('#pwd')
 const order_contents = document.querySelectorAll('.order_contents > div')
 console.log(tab_title,tab_contents,radio,order_contents)
 for(let i of tab_contents){i.style.display = 'none'}
