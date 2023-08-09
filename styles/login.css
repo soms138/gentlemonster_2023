@@ -1,0 +1,169 @@
+main {
+    margin: 230px auto;
+    text-align: center;
+}
+main .login {
+    margin: 0 auto;
+    max-width: 600px;
+}
+main .login h1 {
+    width: 350px; height: 70px;
+    margin: 0 auto;
+}
+main .login h1 a {}
+main .login h1 a img {width: 100%;}
+main .login .tab_title {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0 50px;
+}
+main .login .tab_title a {
+    background: #F1F1F1;
+    width: 300px;
+    padding: 20px 0;
+    color: #aaa;
+    font-size: 1.333rem;
+    border-bottom: 3px solid #FFDB59;
+    border-radius: 5px 5px 0 0;
+}
+main .login .tab_title a.active {
+    background: #FFDB59;
+    color: #fff;
+}
+main .login .tab_contents {}
+/* .tab_c1 */
+main .login .tab_contents .tab_c1 {}
+main .login .tab_contents .tab_c1 form {}
+main .login .tab_contents .tab_c1 form fieldset {}
+main .login .tab_contents .tab_c1 form fieldset .login_input {}
+main .login .tab_contents .tab_c1 form fieldset .login_input input,
+main .login .tab_contents .tab_c2 form fieldset .order_name p #name,
+main .login .tab_contents .tab_c2 form fieldset .order_contents .email input,
+main .login .tab_contents .tab_c2 form fieldset .order_contents .phone_num input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 600px;
+    padding: 20px;
+}
+main .login .tab_contents .tab_c1 form fieldset .login_input input:first-child {margin-bottom: 15px;}
+main .login .tab_contents .tab_c1 form fieldset .login_input input::placeholder {
+    font-size: 1.333rem;
+    color: #ccc;
+}
+main .login .tab_contents .tab_c1 form fieldset .login_input #id {}
+main .login .tab_contents .tab_c1 form fieldset .login_input #pwd {}
+main .login .tab_contents .tab_c1 form fieldset .mid {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 20px 0 50px;
+}
+main .login .tab_contents .tab_c1 form fieldset .mid .fix {
+    display: flex;
+    align-items: center;
+}
+main .login .tab_contents .tab_c1 form fieldset .mid .fix label {cursor: pointer; margin-right: 20px;}
+main .login .tab_contents .tab_c1 form fieldset .mid .fix label input {margin-right: 5px;}
+main .login .tab_contents .tab_c1 form fieldset .mid .fix label span {}
+main .login .tab_contents .tab_c1 form fieldset .mid a {
+    display: flex;
+    align-items: center;
+}
+main .login .tab_contents .tab_c1 form fieldset .mid a span {margin-right: 5px;}
+main .login .tab_contents .tab_c1 form fieldset .mid a img {width: 15px;}
+main .login .tab_contents .tab_c1 form fieldset p {}
+main .login .tab_contents .tab_c1 form fieldset p button,
+main .login .tab_contents .tab_c2 form fieldset p button {
+    background: #222;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.333rem;
+    width: 600px;
+    padding: 30px 0;
+    transition: all 0.1s;
+}
+main .login .tab_contents .tab_c1 form fieldset p button:hover,
+main .login .tab_contents .tab_c2 form fieldset p button:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+main .login .tab_contents .tab_c1 .other {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 70px 0;
+}
+main .login .tab_contents .tab_c1 .other a {
+    width: 80px; height: 80px;
+    margin-right: 50px;
+    transition: all 0.1s;
+}
+main .login .tab_contents .tab_c1 .other a:hover{
+    filter: drop-shadow(0 0 3px rgba(0,0,0,0.2));
+}
+main .login .tab_contents .tab_c1 .other a:nth-child(2):hover {
+    filter: drop-shadow(0 0 3px rgba(0,0,0,0.5));
+}
+main .login .tab_contents .tab_c1 .other a:last-child {margin-right: 0;}
+main .login .tab_contents .tab_c1 .other a img {width: 100%;}
+/* .tab_c2 */
+main .login .tab_contents .tab_c2 {}
+main .login .tab_contents .tab_c2 form {}
+main .login .tab_contents .tab_c2 form fieldset {}
+main .login .tab_contents .tab_c2 form fieldset .order_name {}
+main .login .tab_contents .tab_c2 form fieldset .order_name p {
+    font-size: 1.333rem;
+    text-align: left;
+}
+main .login .tab_contents .tab_c2 form fieldset .order_name p #name {
+    margin: 20px 0 50px;
+}
+main .login .tab_contents .tab_c2 form fieldset .order_name p #name::placeholder {font-size: 1.333rem;}
+main .login .tab_contents .tab_c2 form fieldset .radio {
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+main .login .tab_contents .tab_c2 form fieldset .radio label {margin-right: 20px;}
+main .login .tab_contents .tab_c2 form fieldset .radio label input {margin-right: 10px;}
+main .login .tab_contents .tab_c2 form fieldset .radio label span.active {}
+main .login .tab_contents .tab_c2 form fieldset .radio label span {
+    font-size: 1.333rem;
+    cursor: pointer;
+}
+main .login .tab_contents .tab_c2 form fieldset .order_contents {}
+main .login .tab_contents .tab_c2 form fieldset .order_contents .email,
+main .login .tab_contents .tab_c2 form fieldset .order_contents .phone_num {
+    margin: 20px 0 50px;
+}
+main .login .tab_contents .tab_c2 form fieldset .order_contents .email input {}
+main .login .tab_contents .tab_c2 form fieldset .order_contents .email input::placeholder,
+main .login .tab_contents .tab_c2 form fieldset .order_contents .phone_num input::placeholder {font-size: 1.333rem;}
+main .login .tab_contents .tab_c2 form fieldset .order_contents .phone_num input:first-child,
+main .login .tab_contents .tab_c2 form fieldset .order_contents .email input:first-child {
+    margin-bottom: 15px;
+}
+main .login .tab_contents .tab_c2 form fieldset p {}
+main .login .tab_contents .tab_c2 form fieldset p button {margin-bottom: 70px;}
+
+
+/* join */
+main .login .join {
+    border-top: 1px solid #ccc;
+    padding-top: 70px;
+}
+main .login .join > span {}
+main .login .join > a {
+    border: 1px solid rgb(88, 195, 231);
+    color: rgb(88, 195, 231);
+    border-radius: 5px;
+    padding: 30px 0;
+    width: 600px;
+    display: block;
+    margin-top: 20px;
+    font-size: 1.333rem;
+    background: #fff;
+    transition: all 0.1s;
+}
+main .login .join > a:hover {
+    box-shadow: 0 0 5px rgba(88, 195, 231,0.5);
+}
