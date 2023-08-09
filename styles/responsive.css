@@ -2,7 +2,7 @@
 @media screen and (max-width:1500px){
     /* 1500px 이하일 때 */
     main .visual video {
-        max-width: 250px;
-        min-width: 200px;
+        width: auto;
+        height: 100%;
     }
 }/* 1500 end */
