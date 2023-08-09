@@ -38,8 +38,8 @@ main .login .tab_contents .tab_c1 form fieldset {}
 main .login .tab_contents .tab_c1 form fieldset .login_input {}
 main .login .tab_contents .tab_c1 form fieldset .login_input input,
 main .login .tab_contents .tab_c2 form fieldset .order_name p #name,
-main .login .tab_contents .tab_c2 form fieldset .order_contents .email input,
-main .login .tab_contents .tab_c2 form fieldset .order_contents .phone_num input {
+main .login .tab_contents .tab_c2 form fieldset .order_contents .email_wrap > input,
+main .login .tab_contents .tab_c2 form fieldset .order_contents .phone_num > input {
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 600px;
@@ -131,16 +131,53 @@ main .login .tab_contents .tab_c2 form fieldset .radio label span {
     cursor: pointer;
 }
 main .login .tab_contents .tab_c2 form fieldset .order_contents {}
-main .login .tab_contents .tab_c2 form fieldset .order_contents .email,
+main .login .tab_contents .tab_c2 form fieldset .order_contents .email_wrap,
 main .login .tab_contents .tab_c2 form fieldset .order_contents .phone_num {
     margin: 20px 0 50px;
 }
-main .login .tab_contents .tab_c2 form fieldset .order_contents .email input {}
-main .login .tab_contents .tab_c2 form fieldset .order_contents .email input::placeholder,
+main .login .tab_contents .tab_c2 form fieldset .order_contents .email_wrap input {}
+main .login .tab_contents .tab_c2 form fieldset .order_contents .email_wrap  input::placeholder,
 main .login .tab_contents .tab_c2 form fieldset .order_contents .phone_num input::placeholder {font-size: 1.333rem;}
-main .login .tab_contents .tab_c2 form fieldset .order_contents .phone_num input:first-child,
-main .login .tab_contents .tab_c2 form fieldset .order_contents .email input:first-child {
+main .login .tab_contents .tab_c2 form fieldset .order_contents .phone_num > input,
+main .login .tab_contents .tab_c2 form fieldset .order_contents .email_wrap > input {
     margin-bottom: 15px;
+}
+main .login .tab_contents .tab_c2 form fieldset .order_contents .email_wrap .email_input{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+main .login .tab_contents .tab_c2 form fieldset .order_contents .email_wrap .email_input #email {width: 250px;}
+main .login .tab_contents .tab_c2 form fieldset .order_contents .email_wrap .email_input #email,
+main .login .tab_contents .tab_c2 form fieldset .order_contents .email_wrap .email_input #email_select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+main .login .tab_contents .tab_c2 form fieldset .order_contents .email_wrap .email_input #email_select option {font-size: 1.333rem;}
+main .login .tab_contents .tab_c2 form fieldset .order_contents .email_wrap .email_input span {font-size: 1.333rem;}
+main .login .tab_contents .tab_c2 form fieldset .order_contents .email_wrap .email_input #email_select {width: 300px;}
+main .login .tab_contents .tab_c2 form fieldset .order_contents .phone_num .user_num {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+main .login .tab_contents .tab_c2 form fieldset .order_contents .phone_num .user_num #phone_select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 120px;
+    cursor: pointer;
+    margin-right: 29px;
+}
+main .login .tab_contents .tab_c2 form fieldset .order_contents .phone_num .user_num #phone_select option {font-size: 1.333rem;}
+main .login .tab_contents .tab_c2 form fieldset .order_contents .phone_num .user_num input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 130px;
 }
 main .login .tab_contents .tab_c2 form fieldset p {}
 main .login .tab_contents .tab_c2 form fieldset p button {margin-bottom: 70px;}

@@ -35,7 +35,7 @@
                                 </div>
                                 <a href="#"><span>아이디/비밀번호 찾기</span><img src="./images/right_arrow.png" alt=""></a>
                             </div>
-                            <p><button type="submit">로그인</button></p>
+                            <p><button type="submit" class="login_btn">로그인</button></p>
                         </fieldset>
                     </form>
                     <div class="other">
@@ -54,36 +54,40 @@
                             </div>
                             <div class="radio"> 
                                 <label for="email" class="active">
-                                    <input type="radio" checked name="order" value="email" id="email">
+                                    <input type="radio" checked name="email_order" value="email" id="email_order">
                                     <span>이메일</span>
                                 </label>
                                 <label for="phone">
-                                    <input type="radio" name="order" value="phone" id="phone">
+                                    <input type="radio" name="phone_order" value="phone" id="phone_order">
                                     <span>핸드폰 번호</span>
                                 </label>
                             </div>
                             <div class="order_contents">
-                                <div class="email">
+                                <div class="email_wrap">
                                     <input type="text" name="num" id="num" placeholder="주문번호">
-                                    <input type="email" name="email" id="email" placeholder="이메일">
-                                    <select name="room_select" id="room_select">
-                                        <option value="">메일을 선택해주세요.</option>
-                                        <option value="">naver.com</option>
-                                        <option value="">google.com</option>
-                                    </select>
+                                    <div class="email_input">
+                                        <input type="email" name="email" id="email" placeholder="email">
+                                        <span>@</span>
+                                        <select name="email_select" id="email_select">
+                                            <option value="">메일주소를 선택해주세요.</option>
+                                            <option value="">naver.com</option>
+                                            <option value="">google.com</option>
+                                            <option value="">hanmail.net</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="phone_num">
                                     <input type="text" name="num" id="num" placeholder="주문번호">
                                     <div class="user_num">
-                                        <select name="room_select" id="room_select">
+                                        <select name="phone_select" id="phone_select">
                                             <option value="">통신사</option>
                                             <option value="">SKT</option>
                                             <option value="">KT</option>
                                             <option value="">U+</option>
                                         </select>
-                                        <input type="number" name="number1" id="number1">-
-                                        <input type="number" name="number2" id="number2">-
-                                        <input type="number" name="number3" id="number3">
+                                        <input type="tel" name="number1" id="number1">-
+                                        <input type="tel" name="number2" id="number2">-
+                                        <input type="tel" name="number3" id="number3">
                                     </div>
                                 </div>
                             </div>
