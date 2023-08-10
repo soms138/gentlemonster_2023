@@ -1,0 +1,146 @@
+/* swiper-slide */
+/* category */
+main {
+    margin: 0 auto;
+    max-width: 1380px;
+}
+main #category,main #product_list {}
+main #category {
+    background-color: aqua;
+    margin: 0 auto;
+    width: 1350px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+main #category a {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+}
+main #category a:hover img {
+    transform: scale(1.1);
+    filter:brightness(105%);
+}
+/* main #category a:hover span{
+    color: #FFDB59;
+    border-bottom: 1px solid #FFDB59;
+} */
+main #category a img {
+    width: 100%; 
+    margin-bottom: 10px;
+    transition: all 0.1s;
+}
+main #category a span {
+    font-size: 1.333rem;
+    display: block;
+}
+/* product_list */
+main #product_list {}
+main #product_list .title {
+    
+}main #product_list .title .title_t,
+main #product_list .title .title_btm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main #product_list .title .title_t {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid black;
+}
+main #product_list .title .title_t h1 {
+    font-size: 2.369rem;
+    font-weight: 700;
+}
+main #product_list .title .title_t .filter {}
+main #product_list .title .title_t .filter a {
+    font-size: 1.333rem; 
+    margin-right: 50px;
+    transition: all 0.1s;
+}
+main #product_list .title .title_t .filter a:hover {
+    color: #FFDB59;
+    border-bottom: 1px solid #FFDB59;
+}
+main #product_list .title .title_t .filter a:last-child {margin-right: 0;}
+main #product_list .title .title_btm {}
+main #product_list .title .title_btm .left {}
+main #product_list .title .title_btm .left em {font-weight: 700;}
+main #product_list .title .title_btm .left em span {}
+main #product_list .title .title_btm #product_align {
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+main #product_list .title .title_btm #product_align option {}
+/* container */
+main #product_list .container {
+    margin-top: 65px;
+    max-width: 1380px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main #product_list .container .item {}
+main #product_list .container .item1 {}
+main #product_list .container .item2 {}
+main #product_list .container .item3 {}
+main #product_list .container .item4 {}
+main #product_list .container .item5 {}
+main #product_list .container .item .box {
+    position: relative;
+    margin-bottom: 15px;
+}
+main #product_list .container .item .box a {}
+main #product_list .container .item .box a img {}
+main #product_list .container .item .box .item_img {
+    width: 265px;
+    height: 320px;
+    display: block;
+    position: relative;
+    /* z-index: 100; */
+}
+main #product_list .container .item .box .item_img img {
+    width: 100%; 
+    height: 100%;
+}
+main #product_list .container .item .box .like_img:hover {background: url(../images/favorite_fill.png);}
+main #product_list .container .item .box .like_img:hover img{display: none;}
+main #product_list .container .item .box .like_img {
+    width: 24px; 
+    height: 24px;
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    /* z-index: 200; */
+}
+main #product_list .container .item .box .like_img img {width: 100%;}
+main #product_list .container .item .txt {}
+main #product_list .container .item .txt h2 {margin-bottom: 7px;}
+main #product_list .container .item .txt p {margin-bottom: 7px;}
+main #product_list .container .item .txt .name {
+    font-size: 1.333rem;
+    font-weight: 500;
+}
+main #product_list .container .item .txt .price {margin-bottom: 15px;}
+main #product_list .container .item .txt .color {}
+main #product_list .container .item .txt .color span {
+    width: 24px; 
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 7px;
+    text-indent: -9999px;
+    display: inline-block;
+}
+main #product_list .container .item .txt .color span:nth-child(1) {background: black;}
+main #product_list .container .item .txt .color span:nth-child(2) {background: gray;}
+main #product_list .container .item .txt .color span:nth-child(3) {background: white; border: 1px solid #aaa;}
+main #product_list .container .item .txt .color span:nth-child(4) {background: darkred;}
+main #product_list .container .item .txt .color span:nth-child(5) {background: navy;}
