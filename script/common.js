@@ -9,7 +9,7 @@ const nav = document.querySelector('#nav') // nav 클릭버튼
 const nav_close = document.querySelector('#nav_close') // X 닫기버튼
 console.log(nav,open_nav,nav_close)
 // 1. open-nav 초기 숨기기 #open-nav {display:none;}
-open_nav.style.transform = 'translateX(100%)'
+open_nav.style.transform = 'translateX(100%)';
 // css값 상태에 따라 변경이 일어날 경우 애니메이션 transition 사용
 open_nav.style.transition = 'all 1s ease';
 // 2. 햄버거 메뉴(nav) 클릭 시 open-nav 출력

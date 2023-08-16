@@ -1,0 +1,32 @@
+main {margin: 50px auto;}
+#map {
+    background: aqua;
+    width: 700px; height: 500px; margin: 0 auto 30px;
+}
+main .txt {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+}
+main .txt p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+main .txt p:first-child {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+main .txt p:nth-child(2) img {
+    width: 24px; 
+    height: 24px;
+    margin-left: -3px;
+}
+main .txt p img {
+    width: 20px; 
+    height: 20px;
+    margin-right: 10px;
+}
+main .txt p span {}

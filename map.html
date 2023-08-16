@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매장보기 | 젠틀몬스터</title>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- favicon,style -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/map.css">
+</head>
+<body>
+    <!-- php local 확인불가, FTP업로드 후 web 확인가능 -->
+    <!-- header -->
+    <?php include('./header.php') ?>
+    <main>
+        <div id="map"><!--지도삽입위치--></div>
+        <div class="txt">
+            <p>젠틀몬스터 스타필드 하남</p>
+            <p><img src="./images/ico_map.png" alt=""><span>경기 하남시 미사대로 750 스타필드 하남 1F</span></p>
+            <p><img src="./images/ico_call.png" alt=""><span>031-8072-8236</span></p>
+            <p>
+                <img src="./images/ico_time.png" alt="">
+                <span>월요일–일요일 10:00am–10:00pm</span>
+            </p>
+        </div>
+    </main>
+    <!-- footer -->
+    <?php include('./footer.php') ?>
+    <!-- script -->
+    <script src="./script/common.js"></script>
+    <!-- 카카오맵 -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=396ec80f8f00d79c0f3711d1194e54c9"></script>
+    <script>
+        var markerPosition  = new kakao.maps.LatLng(37.5454365,127.2237404);
+        const container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        let options = { //지도를 생성할 때 필요한 기본 옵션
+	        center: new kakao.maps.LatLng(37.5454365,127.2237404),//지도의 중심좌표.
+	        level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+        let map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+        var marker = new kakao.maps.Marker({
+	        position: markerPosition
+        });
+        marker.setMap(map);
+    </script>
+</body>
+</html>
