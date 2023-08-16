@@ -152,7 +152,7 @@ main #product_list .title .title_btm #product_align {
 main #product_list .title .title_btm #product_align option {}
 /* container */
 main #product_list .container {
-    margin-top: 65px;
+    margin: 65px 0 100px;
     max-width: 1380px;
     display: flex;
     flex-flow: row nowrap;

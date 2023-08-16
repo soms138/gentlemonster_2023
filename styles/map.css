@@ -1,7 +1,13 @@
 main {margin: 50px auto;}
+main h1 {
+    text-align: center;
+    font-size: 1.777rem;
+    font-weight: 700;
+}
 #map {
-    background: aqua;
-    width: 700px; height: 500px; margin: 0 auto 30px;
+    width: 700px; 
+    height: 500px; 
+    margin: 30px auto 30px;
 }
 main .txt {
     width: 700px;
